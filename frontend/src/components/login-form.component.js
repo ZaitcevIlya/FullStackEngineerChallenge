@@ -42,10 +42,10 @@ export default class LoginForm extends Component {
   render() {
     return (
       <div>
-        <h3>Enter your name</h3>
+        <h3 className='display-4'>Choose your user</h3>
+        <p className='lead'>Pick Admin for creating and deleting users.<br/>Pick any other user to give and see feedback</p>
         <form onSubmit={this.onSubmit}>
           <div className='form-group'>
-            <label>Username: </label>
             <select
               required
               className='form-control'
