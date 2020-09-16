@@ -37,7 +37,6 @@ export default class CreateUser extends Component {
         <h3>Create New Employee</h3>
         <form onSubmit={this.onSubmit}>
           <div className='form-group'>
-            <label>Username: </label>
             <input
               type='text'
               required

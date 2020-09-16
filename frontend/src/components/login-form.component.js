@@ -9,7 +9,6 @@ export default class LoginForm extends Component {
       username: 'admin',
       users: []
     }
-
   }
 
   componentDidMount = () => {
@@ -41,7 +40,7 @@ export default class LoginForm extends Component {
 
   render() {
     return (
-      <div>
+      <div className='col-6 offset-3'>
         <h3 className='display-4'>Choose your user</h3>
         <p className='lead'>Pick Admin for creating and deleting users.<br/>Pick any other user to give and see feedback</p>
         <form onSubmit={this.onSubmit}>
