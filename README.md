@@ -40,6 +40,10 @@ At this moment it could be run only localy. To do that:
 
 You need to install depencies within backend and frontend folders.
 
+```bash
+npm install
+```
+
 And:
 
 Run server in backend directory
