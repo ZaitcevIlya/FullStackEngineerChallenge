@@ -38,6 +38,10 @@ Besides custom styling,
 
 At this moment it could be run only localy. To do that:
 
+You need to install depencies within backend and frontend folders.
+
+And:
+
 Run server in backend directory
 
 ```bash
