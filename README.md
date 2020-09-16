@@ -1,38 +1,51 @@
-# Full Stack Developer Challenge
-This is an interview challengs. Please feel free to fork. Pull Requests will be ignored.
+# Very simple feedback app
+I've choose MERN stack (MongoDB, Express, React.js, Node.js) for this app, cause it allows with really small setup build fast applications.
 
-## Requirements
-Design a web application that allows employees to submit feedback toward each other's performance review.
 
-*Partial solutions are acceptable.*  It is not necessary to submit a complete solution that implements every requirement.
+## Backend
 
-### Admin view
-* Add/remove/update/view employees
-* Add/update/view performance reviews
-* Assign employees to participate in another employee's performance review
+For MongoDB I've picked up MongoDB Atlas. It's a cloud solution to store your db. I've connectd MongoDB to Express via Mongoose.
 
-### Employee view
-* List of performance reviews requiring feedback
-* Submit feedback
+Architecture is really simple. One model for implementing Users. And banch of CRUD operations to deal with it.
 
-## Challenge Scope
-* High level description of design and technologies used
-* Server side API (using a programming language and/or framework of your choice)
-  * Implementation of at least 3 API calls
-  * Most full stack web developers at PayPay currently use Java, Ruby on Rails, or Node.js on the server(with MySQL for the database), but feel free to use other tech if you prefer
-* Web app
-  * Implementation of 2-5 web pages using a modern web framework (e.g. React or Angular) that talks to server side
-    * This should integrate with your API, but it's fine to use static responses for some of it 
-* Document all assumptions made
-* Complete solutions aren't required, but what you do submit needs to run.
+#### What should be added here
 
-## How to complete this challenge
-* Fork this repo in github
-* Complete the design and code as defined to the best of your abilities
-* Place notes in your code to help with clarity where appropriate. Make it readable enough to present to the PayPay interview team
-* Complete your work in your own github repo and send the results to us and/or present them during your interview
+ - Auto tests,
+ - Deployment
 
-## What are we looking for? What does this prove?
-* Assumptions you make given limited requirements
-* Technology and design choices
-* Identify areas of your strengths
+
+## Frontend
+
+Frontend is build on React.js. based on Create-React-App. Styling implemented via Bootstrap due to tight time constraints, but usually I prefer to use SCSS or CSS-Modules.
+
+In App implemented pseudo Login Page where you need to select User. Depending on the role of the selected user, an "admin panel" or a page where you can see reviews and leave more will be shown.
+
+In Admin page implemented adding and deleting users.
+
+In Reviews page implemented adding reviews to every existing users except admin. And showing all reviews splitted based on users.
+
+#### What should be added here
+
+Besides custom styling,
+ - PropTypes checking,
+ - Snapshot testing of React components,
+ - Real secure login,
+ - Events and Errors handling,
+ - Components optimisation
+
+
+## How to run
+
+At this moment it could be run only localy. To do that:
+
+Run server in backend directory
+
+```bash
+cd backend/ && node server
+```
+
+Run dev-server in frontend directory
+
+```bash
+cd frontend/ && npm start
+```
